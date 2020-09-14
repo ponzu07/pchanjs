@@ -18,6 +18,39 @@ client.on('ready', message =>
 
 });
 
+client.on('voiceStateUpdate', (oldMember, newMember) => {
+  let newUserChannel = newMember.voiceChannel
+  let oldUserChannel = oldMember.voiceChannel
+
+
+  if(oldUserChannel === undefined && newUserChannel !== undefined) {
+    let channelID;
+    let channels = newMember.guild.channels;
+    channelLoop:
+    for (let c of channels) {
+      let channelType = c[1].type;
+      if (channelType === "text") {
+        channelID = c[0];
+        break channelLoop;
+      }
+    }
+    client.channels.get(channelID).send(newMember.user.username + " がチャンネル 「" + newUserChannel.name + "」 に入室したよ。");
+  } else if(newUserChannel === undefined){
+    let channelID;
+    let channels = oldMember.guild.channels;
+    channelLoop:
+    for (let c of channels) {
+      let channelType = c[1].type;
+      if (channelType === "text") {
+        channelID = c[0];
+        break channelLoop;
+      }
+    }
+    client.channels.get(channelID).send(newMember.user.username + " がチャンネル 「" + oldUserChannel.name + "」 から退室したよ。");
+  }
+})
+
+
 //ボイスチャンネル入退室をテキストチャンネルに通知
 bot.on("voiceChannelJoin", (member, newChannel) => {
 bot.createMessage('709227262251106344', member.username + "が [" + newChannel.name + "] に入室したよ( *´艸｀)");
