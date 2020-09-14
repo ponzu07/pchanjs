@@ -18,7 +18,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
     for (let c of channels) {
       let channelType = c[1].type;
       if (channelType === "text") {
-        channelID = c[0];
+        channelID = 709227262251106344;
         break channelLoop;
       }
     }
@@ -30,7 +30,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
     for (let c of channels) {
       let channelType = c[1].type;
       if (channelType === "text") {
-        channelID = c[0];
+        channelID = 709227262251106344;
         break channelLoop;
       }
     }
