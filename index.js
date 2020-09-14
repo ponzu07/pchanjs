@@ -6,7 +6,7 @@ const client = new discord.Client();
 //BOTステータス(Discord.js)
 client.on('ready', message =>
 {
-  client.user.setPresence({ activity: { name: 'VALORANT' } }); //アクティビティ表示
+  client.user.setPresence({ activity: { name: '@VALORANT' } }); //アクティビティ表示
 	console.log('準備ok!');
   setInterval(() =>
     client.guilds.cache.forEach(guild => {
@@ -65,7 +65,6 @@ bot.createMessage('709227262251106344', member.username + "が [" + oldChannel.n
 });
 
 
-
 //確率アクション
 client.on('message', message=>{
   /* bot自身の発言を無視 */
@@ -78,13 +77,5 @@ const prob = Math.floor(Math.random() * 100);
 });
 
 
-//ログイン関係
-if(process.env.BOT_TOKEN == undefined)
-{
-	console.log('pls set ENV: BOT_TOKEN');
-	process.exit(0);
-}
-
 // Discord に接続します。
-client.connect();
-client.login( process.env.BOT_TOKEN );
+client.login(process.env.BOT_TOKEN);
