@@ -86,5 +86,5 @@ if(process.env.BOT_TOKEN == undefined)
 }
 
 // Discord に接続します。
-bot.connect();
+client.connect();
 client.login( process.env.BOT_TOKEN );
