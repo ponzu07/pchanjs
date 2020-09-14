@@ -14,10 +14,10 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 
   if(oldUserChannel === undefined && newUserChannel !== undefined) {
     let channels = newMember.guild.channels;
-    client.channels.cache.get(channelID).send(newMember.user.username + " がチャンネル 「" + newUserChannel.name + "」 に入室したよ。");
+    client.channels.cache.get(channelID).send(newMember.user.username + " がチャンネル 「" + newUserChannel.name + "」 に入室しました。");
   } else if(newUserChannel === undefined){
     let channels = oldMember.guild.channels;
-    client.channels.cache.get(channelID).send(newMember.user.username + " がチャンネル 「" + oldUserChannel.name + "」 から退室したよ。");
+    client.channels.cache.get(channelID).send(newMember.user.username + " がチャンネル 「" + oldUserChannel.name + "」 から退室しました。");
   }
 })
 
