@@ -2,11 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  client.user.setPresence({ activity: { name: '@VALORANT' } }); //アクティビティ表示
+  client.user.setPresence({ activity: { name: 'VALORANT' } }); //アクティビティ表示
 	console.log('準備ok!');
 });
-
-
 
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
@@ -22,9 +20,6 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
     client.channels.cache.get(channelID).send(newMember.user.username + " がチャンネル 「" + oldUserChannel.name + "」 から退室したよ。");
   }
 })
-
-
-
 
 
 client.login(process.env.BOT_TOKEN);
