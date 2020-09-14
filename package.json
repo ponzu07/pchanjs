@@ -1,0 +1,23 @@
+{
+  "name": "pchanjs",
+  "version": "1.0.0",
+  "description": "Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponzu07/pchanj.git"
+  },
+  "author": "ponzu07",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ponzu07/pchanj/issues"
+  },
+  "homepage": "https://github.com/ponzu07/pchanj#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.3.1"
+  }
+}
