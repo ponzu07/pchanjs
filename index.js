@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  client.user.setPresence({ activity: { name: 'VALORANT' } }); //アクティビティ表示
+  client.user.setPresence({ activity: { name: '@VALORANT' } }); //アクティビティ表示
 	console.log('準備ok!');
 });
 
@@ -10,8 +10,8 @@ client.on('ready', () => {
 
 
 client.on('voiceStateUpdate', (oldState, newState) => {
-  const newUserChannel = newState.voice.channel
-  const oldUserChannel = oldState.voice.channel
+  let newUserChannel = newState.voice.channel
+  let oldUserChannel = oldState.voice.channel
 
   if(oldUserChannel === null && newUserChannel !== null) {
     client.channels.cache.get('754891923159777371').send(newState.member.user.username + " が参加しました。")
