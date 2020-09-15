@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const fs = require('fs');
-const config = require('./config.json');
+
 
 const appendChunkToFile = (fileName) => {
     const pathToFile = __dirname + `/recordings/${fileName}.pcm`;
@@ -10,15 +10,15 @@ const appendChunkToFile = (fileName) => {
 };
 
 client.on('message', msg => {
-    if (msg.content.startsWith(config.PREFIX)) {
-        const commandBody = msg.content.substring(config.PREFIX.length).split(' ');
+    if (msg.content.startsWith('---')) {
+        const commandBody = msg.content.substring('---').split(' ');
         const channelName = commandBody[1];
 
-        if (commandBody[0] === ('enter') && commandBody[1] && commandBody[2]) {
+        if (commandBody[0] === ('rec') && commandBody[1] && commandBody[2]) {
             const voiceChannel = msg.guild.channels.cache.find(channel => channel.name === channelName);
 
             if (!voiceChannel || voiceChannel.type !== 'voice')
-                return msg.reply(`The channel #${channelName} doesn't exist or isn't a voice channel.`);
+                return msg.reply(`#${channelName} は使用できません。`);
 
             console.log(`Sliding into ${voiceChannel.name}...`);
             voiceChannel.join()
