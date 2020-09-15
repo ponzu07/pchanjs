@@ -11,7 +11,7 @@ const appendChunkToFile = (fileName) => {
 
 client.on('message', msg => {
     if (msg.content.startsWith('---')) {
-        const commandBody = msg.content.substring('---').split(' ');
+        const commandBody = msg.content.substring(3).split(' ');
         const channelName = commandBody[1];
 
         if (commandBody[0] === ('rec') && commandBody[1] && commandBody[2]) {
