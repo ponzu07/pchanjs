@@ -10,7 +10,7 @@
 *~
 *.sass-cache
 *node_modules/
-recordings
+#recordings
 
 # OS or Editor folders
 .DS_Store
