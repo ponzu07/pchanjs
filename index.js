@@ -53,7 +53,7 @@ client.on('message', msg => {
 
 
 client.on('ready', () => {
-  client.user.setPresence({ activity: { name: 'Among Us' } }); //アクティビティ表示
+  client.user.setActivity('VALORANT', { type: 'STREAMING' }); //アクティビティ表示
 	console.log('準備ok!');
 });
 
