@@ -50,7 +50,15 @@ client.on('message', msg => {
     }
 });
 
-
+client.on('message', async message => {
+   if (message.content.startsWith('!valorand') && message.guild) {
+   	if (message.mentions.members.size !== 1) return message.channel.send('メンバーを指定してください')
+     const member = message.mentions.members.first()
+     if (!member.voice.channel) return message.channel.send('指定したメンバーがVCに参加していません')
+     const tags = member.voice.channel.members.map(member => member.user.tag)
+     message.channel.send(tags.join('\n'))
+   }
+ });
 
 client.on('ready', () => {
   client.user.setActivity('VALORANT', { type: 'STREAMING' }); //アクティビティ表示
