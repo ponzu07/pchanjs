@@ -71,8 +71,7 @@ client.on('message', message =>{
         let author = message.author.username;
 	var randarray = Math.floor( Math.random() * 16 );
 
-        message.reply({ embed })
-            .catch(console.error);
+        message.channel.send(embed1)
         return;
    }
 	
