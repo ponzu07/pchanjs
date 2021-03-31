@@ -27,13 +27,13 @@ client.on('message', message => {
 				message.channel.send(embed)
 				break
 			case "1":
-				const embed = new Discord.MessageEmbed()
+				const embed1 = new Discord.MessageEmbed()
 					.setTitle('レイズ')
 					.setURL('https://valorant.fandom.com/wiki/Raze')
 					.setImage('https://static.wikia.nocookie.net/valorant/images/c/c4/Raze_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp()
-				message.channel.send(embed)
+				message.channel.send(embed1)
 				break
 			default:
 				console.log(randagent);
