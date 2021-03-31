@@ -14,45 +14,16 @@ const appendChunkToFile = (fileName) => {
 
 client.on('message', message => {
 	if (message.content === 'ヴァロランド') {
-		const randarray = 4
+		const randagent = Math.floor( Math.random() * 16 );
 
-		switch (randarray) {
-			case "1"：
-			const embed = new Discord.MessageEmbed()
-				.setTitle('ジェット')
-				.setURL('https://valorant.fandom.com/wiki/Jett')
-				.setImage(
-					'https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png'
-				)
-				.setColor('RANDOM')
-				.setTimestamp()
-			message.channel.send(embed)
-			break;
-			case "2":
-				const embed = new Discord.MessageEmbed()
-					.setTitle('2')
-					.setURL('https://valorant.fandom.com/wiki/Jett')
-					.setImage(
-						'https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png'
-					)
-					.setColor('RANDOM')
-					.setTimestamp()
-				message.channel.send(embed)
-				break;
-			case "3":
-				const embed = new Discord.MessageEmbed()
-					.setTitle('3')
-					.setURL('https://valorant.fandom.com/wiki/Jett')
-					.setImage(
-						'https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png'
-					)
-					.setColor('RANDOM')
-					.setTimestamp()
-				message.channel.send(embed)
-				break;
-			default:
-				console.log('no-hitto');
-		}
+switch(randagent){
+  case "1":
+		console.log('1');
+		break
+  case "2":
+		console.log('2');
+		break
+}
 
 	}
 })
