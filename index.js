@@ -61,28 +61,21 @@ client.on('message', async message => {
  });
 
 
-client.on('message', message =>{
-    if(message.author.bot){
-        return;
-   }
 
-      if (message.content === 'ヴァロランド') {
-        let channel = message.channel;
-        let author = message.author.username;
-	var randarray = Math.floor( Math.random() * 16 );
 
-        const embed = new Discord.MessageEmbed()
-          .setTitle('ジェット')
-          .setURL('https://valorant.fandom.com/wiki/Jett')
-          .image('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
-          .setColor('4886754')
-          .setTimestamp()
+ client.on('message', message => {
+   if (message.content === '!embed') {
+     const embed = new Discord.MessageEmbed()
+       .setTitle('ジェット')
+       .setURL('https://valorant.fandom.com/wiki/Jett')
+       .image('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
+       .setColor('RANDOM')
+       .setTimestamp()
  
      message.channel.send(embed)
-        return;
    }
-	
-});
+ })
+
 
 
 client.on('voiceStateUpdate', (oldState, newState) => {
