@@ -17,7 +17,7 @@ client.on('message', message => {
 		const randagent = Math.floor(Math.random() * 16);
 
 		switch (randagent) {
-			case "0":
+			case 0:
 				const embed0 = new Discord.MessageEmbed()
 					.setTitle('ジェット')
 					.setURL('https://valorant.fandom.com/wiki/Jett')
