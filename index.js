@@ -14,16 +14,23 @@ const appendChunkToFile = (fileName) => {
 
 client.on('message', message => {
 	if (message.content === 'ヴァロランド') {
-		const randagent = Math.floor( Math.random() * 16 );
+		const randagent = Math.floor(Math.random() * 16);
 
-switch(randagent){
-  case "1":
-		console.log('1');
-		break
-  case "2":
-		console.log('2');
-		break
-}
+		switch (randagent) {
+			case "1":
+				const embed = new Discord.MessageEmbed()
+					.setTitle('埋め込みのタイトル')
+					.setURL('https://google.com')
+					.addField('name', 'value')
+					.setColor('RANDOM')
+					.setTimestamp()
+
+				message.channel.send(embed)
+				break
+			case "2":
+				console.log('2');
+				break
+		}
 
 	}
 })
