@@ -26,7 +26,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed0)
 				break
-			case "1":
+			case 1:
 				const embed1 = new Discord.MessageEmbed()
 					.setTitle('レイズ')
 					.setURL('https://valorant.fandom.com/wiki/Raze')
@@ -35,7 +35,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed1)
 				break
-			case "2":
+			case 2:
 				const embed2 = new Discord.MessageEmbed()
 					.setTitle('ブリーチ')
 					.setURL('https://valorant.fandom.com/wiki/Breach')
@@ -44,7 +44,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed2)
 				break
-			case "3":
+			case 3:
 				const embed3 = new Discord.MessageEmbed()
 					.setTitle('オーメン')
 					.setURL('https://valorant.fandom.com/wiki/Omen')
@@ -53,7 +53,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed3)
 				break
-			case "4":
+			case 4:
 				const embed4 = new Discord.MessageEmbed()
 					.setTitle('ブリムストーン')
 					.setURL('https://valorant.fandom.com/wiki/Brimstone')
@@ -62,7 +62,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed4)
 				break
-			case "5":
+			case 5:
 				const embed5 = new Discord.MessageEmbed()
 					.setTitle('フェニックス')
 					.setURL('https://valorant.fandom.com/wiki/Phoenix')
@@ -71,7 +71,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed5)
 				break
-			case "6":
+			case 6:
 				const embed6 = new Discord.MessageEmbed()
 					.setTitle('ブリーチ')
 					.setURL('https://valorant.fandom.com/wiki/Breach')
@@ -80,7 +80,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed6)
 				break
-			case "7":
+			case 7:
 				const embed7 = new Discord.MessageEmbed()
 					.setTitle('セージ')
 					.setURL('https://valorant.fandom.com/wiki/Sage')
@@ -89,7 +89,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed7)
 				break
-			case "8":
+			case 8:
 				const embed8 = new Discord.MessageEmbed()
 					.setTitle('ソーヴァ')
 					.setURL('https://valorant.fandom.com/wiki/Sova')
@@ -98,7 +98,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed8)
 				break
-			case "9":
+			case 9:
 				const embed9 = new Discord.MessageEmbed()
 					.setTitle('ヴァイパー')
 					.setURL('https://valorant.fandom.com/wiki/Viper')
@@ -107,7 +107,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed9)
 				break
-			case "10":
+			case 10:
 				const embed10 = new Discord.MessageEmbed()
 					.setTitle('サイファー')
 					.setURL('https://valorant.fandom.com/wiki/Cypher')
@@ -116,7 +116,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed10)
 				break
-			case "11":
+			case 11:
 				const embed11 = new Discord.MessageEmbed()
 					.setTitle('レイナ')
 					.setURL('https://valorant.fandom.com/wiki/Reyna')
@@ -125,7 +125,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed11)
 				break
-			case "12":
+			case 12:
 				const embed12 = new Discord.MessageEmbed()
 					.setTitle('スカイ')
 					.setURL('https://valorant.fandom.com/wiki/Skye')
@@ -134,7 +134,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed12)
 				break
-			case "13":
+			case 13:
 				const embed13 = new Discord.MessageEmbed()
 					.setTitle('キルジョイ')
 					.setURL('https://valorant.fandom.com/wiki/Killjoy')
@@ -143,7 +143,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed13)
 				break
-			case "14":
+			case 14:
 				const embed14 = new Discord.MessageEmbed()
 					.setTitle('ヨル')
 					.setURL('https://valorant.fandom.com/wiki/Yoru')
@@ -152,7 +152,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed14)
 				break
-			case "15":
+			case 15:
 				const embed15 = new Discord.MessageEmbed()
 					.setTitle('アストラ')
 					.setURL('https://valorant.fandom.com/wiki/Astra')
