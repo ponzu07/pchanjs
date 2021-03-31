@@ -31,7 +31,7 @@ client.on('message', message => {
 				console.log('2');
 				break
 			default:
-				console.log('no-hitto');
+				console.log(randagent);
 		}
 
 	}
