@@ -30,10 +30,13 @@ client.on('message', message => {
 			case "2":
 				console.log('2');
 				break
+			default:
+				console.log('no-hitto');
 		}
 
 	}
 })
+
 
 
 client.on('voiceStateUpdate', (oldState, newState) => {
