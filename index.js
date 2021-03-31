@@ -17,7 +17,7 @@ client.on('message', message => {
 		var randarray = 1
 
 		switch (randarray) {
-			case 1：
+			case "1"：
 			const embed = new Discord.MessageEmbed()
 				.setTitle('ジェット')
 				.setURL('https://valorant.fandom.com/wiki/Jett')
@@ -28,7 +28,7 @@ client.on('message', message => {
 				.setTimestamp()
 			message.channel.send(embed)
 			break;
-			case 2:
+			case "2":
 				const embed = new Discord.MessageEmbed()
 					.setTitle('2')
 					.setURL('https://valorant.fandom.com/wiki/Jett')
@@ -39,7 +39,7 @@ client.on('message', message => {
 					.setTimestamp()
 				message.channel.send(embed)
 				break;
-			case 3:
+			case "3":
 				const embed = new Discord.MessageEmbed()
 					.setTitle('3')
 					.setURL('https://valorant.fandom.com/wiki/Jett')
