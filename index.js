@@ -14,7 +14,7 @@ const appendChunkToFile = (fileName) => {
 
 client.on('message', message => {
 	if (message.content === 'ヴァロランド') {
-		const randarray = 1
+		const randarray = 4
 
 		switch (randarray) {
 			case "1"：
