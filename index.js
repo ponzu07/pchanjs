@@ -71,27 +71,19 @@ client.on('message', message =>{
         let author = message.author.username;
 	var randarray = Math.floor( Math.random() * 16 );
 
-        message.channel.send(embed1)
+        const embed = new Discord.MessageEmbed()
+          .setTitle('ジェット')
+          .setURL('https://valorant.fandom.com/wiki/Jett')
+          .image('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
+          .setColor('4886754')
+          .setTimestamp()
+ 
+     message.channel.send(embed)
         return;
    }
 	
 });
 
-const embed1 = {
-  "title": "ジェット",
-  "url": "https://valorant.fandom.com/wiki/Jett",
-  "color": 4886754,
-  "image": {
-    "url": "https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png"
-  },
-  "fields": [
-    {
-      "name": "デュエリスト",
-      "value": "１",
-      "inline": true
-    }
-  ]
-};
 
 client.on('voiceStateUpdate', (oldState, newState) => {
   const newUserChannel = newState.channelID
