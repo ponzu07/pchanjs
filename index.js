@@ -48,19 +48,7 @@ client.on('message', msg => {
             console.log(`\nSTOPPED RECORDING\n`);
         }
     }
-});
-
-client.on('message', async message => {
-   if (message.content.startsWith('!valorand') && message.guild) {
-   	if (message.mentions.members.size !== 1) return message.channel.send('メンバーを指定してください')
-     const member = message.mentions.members.first()
-     if (!member.voice.channel) return message.channel.send('指定したメンバーがVCに参加していません')
-     const tags = member.voice.channel.members.map(member => member.user.tag)
-     message.channel.send(tags.join('\n'))
-   }
- });
-
-
+})
 
 
  client.on('message', message => {
@@ -68,7 +56,7 @@ client.on('message', async message => {
      const embed = new Discord.MessageEmbed()
        .setTitle('ジェット')
        .setURL('https://valorant.fandom.com/wiki/Jett')
-       .image('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
+       .setImage('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
        .setColor('RANDOM')
        .setTimestamp()
  
