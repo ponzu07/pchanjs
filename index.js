@@ -23,6 +23,7 @@ client.on('message', message => {
 					.setURL('https://valorant.fandom.com/wiki/Jett')
 					.setImage('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
 					.setColor('RANDOM')
+					.addField("アビリティー", false)
 					.addField("アップドラフト（Q）", "ジェットを上に向かって飛ばす。", true)
 					.addField("テイルウィンド（E）", "ジェットを現在の進行方向に向かって加速させる。立ち止まっている場合は前方に押し出す。", true)
 					.addField("クラウドバースト（C）", "煙玉を投げる。この玉は着弾すると煙を発生させ、しばらくの間視線を遮る。アビリティーキーを「長押し」でこの煙玉をクロスヘアの方向にカーブさせる。", true)
@@ -36,9 +37,10 @@ client.on('message', message => {
 					.setURL('https://valorant.fandom.com/wiki/Raze')
 					.setImage('https://static.wikia.nocookie.net/valorant/images/c/c4/Raze_artwork.png')
 					.setColor('RANDOM')
+					.addField("アビリティー", false)
 					.addField("ブラストパック（Q）", "ブラストパックを投げる。このブラストパックは地形の表面に張り付けることができる。設置後アビリティを「再使用」すると起爆して、爆風を受けたものにダメージを与え、吹き飛ばす。レイズは爆風によるダメージを受けないが、一定距離以上吹き飛ばされると自身も落下ダメージを受ける。", true)
 					.addField("ペイント弾（E）", "クラスターグレネードを構える。「発射」でグレネードを投げる。グレネードはダメージを与えると同時に複数の小型爆薬を放出し、それぞれが範囲内の全員にダメージを与える。", true)
-					.addField("ブームボットを準備する。「発射」でブームボットを展開する。このボットは地表をまっすぐに進み、壁に当たると向きを変える。前方の扇状範囲内に敵を感知するとロックオンして追いかけ、敵に追いつくと爆発して大ダメージを与える。", true)
+					.addField("ブームボット（C）", "ブームボットを準備する。「発射」でブームボットを展開する。このボットは地表をまっすぐに進み、壁に当たると向きを変える。前方の扇状範囲内に敵を感知するとロックオンして追いかけ、敵に追いつくと爆発して大ダメージを与える。", true)
 					.addField("ショーストッパー（X）", "ロケットランチャーを構える。「発射」でロケット弾を射出する。ロケット弾は着弾地点の周辺に大ダメージを発生させる。", false)
 					.setTimestamp();
 				message.channel.send(`${message.author},`, embed1);
