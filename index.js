@@ -24,7 +24,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(`${message.author},`, embed0);
+				message.channel.send(`${message.author}, embed0);
 				break
 			case 1:
 				const embed1 = new Discord.MessageEmbed()
@@ -33,7 +33,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/c/c4/Raze_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed1);
+				message.channel.send(`${message.author}, embed1);
 				break
 			case 2:
 				const embed2 = new Discord.MessageEmbed()
@@ -42,7 +42,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/5/5c/Breach_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed2);
+				message.channel.send(`${message.author}, embed2);
 				break
 			case 3:
 				const embed3 = new Discord.MessageEmbed()
@@ -51,7 +51,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/0/06/Omen_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed3);
+				message.channel.send(`${message.author}, embed3);
 				break
 			case 4:
 				const embed4 = new Discord.MessageEmbed()
@@ -60,7 +60,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/3/37/Brimstone_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed4);
+				message.channel.send(`${message.author}, embed4);
 				break
 			case 5:
 				const embed5 = new Discord.MessageEmbed()
@@ -69,7 +69,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/f/fa/Phoenix_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed5);
+				message.channel.send(`${message.author}, embed5);
 				break
 			case 6:
 				const embed6 = new Discord.MessageEmbed()
@@ -78,7 +78,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/5/5c/Breach_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed6);
+				message.channel.send(`${message.author}, embed6);
 				break
 			case 7:
 				const embed7 = new Discord.MessageEmbed()
@@ -87,7 +87,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/1/1e/Sage_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed7);
+				message.channel.send(`${message.author}, embed7);
 				break
 			case 8:
 				const embed8 = new Discord.MessageEmbed()
@@ -96,7 +96,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/6/61/Sova_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed8);
+				message.channel.send(`${message.author}, embed8);
 				break
 			case 9:
 				const embed9 = new Discord.MessageEmbed()
@@ -105,7 +105,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/9/91/Viper_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed9);
+				message.channel.send(`${message.author}, embed9);
 				break
 			case 10:
 				const embed10 = new Discord.MessageEmbed()
@@ -114,7 +114,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/b/bb/Cypher_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed10);
+				message.channel.send(`${message.author}, embed10);
 				break
 			case 11:
 				const embed11 = new Discord.MessageEmbed()
@@ -123,7 +123,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/4/41/Reyna_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed11);
+				message.channel.send(`${message.author}, embed11);
 				break
 			case 12:
 				const embed12 = new Discord.MessageEmbed()
@@ -132,7 +132,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/b/b9/Skye_Keyart_final.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed12);
+				message.channel.send(`${message.author}, embed12);
 				break
 			case 13:
 				const embed13 = new Discord.MessageEmbed()
@@ -141,7 +141,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/8/8c/Killjoy.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed13);
+				message.channel.send(`${message.author}, embed13);
 				break
 			case 14:
 				const embed14 = new Discord.MessageEmbed()
@@ -150,7 +150,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/a/a1/Yoru2.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed14);
+				message.channel.send(`${message.author}, embed14);
 				break
 			case 15:
 				const embed15 = new Discord.MessageEmbed()
@@ -159,7 +159,7 @@ client.on('message', message => {
 					.setImage('https://static.wikia.nocookie.net/valorant/images/8/8a/Astra_artwork.png')
 					.setColor('RANDOM')
 					.setTimestamp();
-				message.channel.send(embed15);
+				message.channel.send(`${message.author}, embed15);
 				break
 			default:
 				console.log(randagent);
