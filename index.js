@@ -23,12 +23,11 @@ client.on('message', message => {
 					.setURL('https://valorant.fandom.com/wiki/Jett')
 					.setImage('https://static.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png')
 					.setColor('RANDOM')
-					.addField("アビリティ", "　", false)
+					.addField("アビリティ", "1", false)
 					.addField("アップドラフト（Q）", "ジェットを上に向かって飛ばす。", true)
 					.addField("テイルウィンド（E）", "ジェットを現在の進行方向に向かって加速させる。立ち止まっている場合は前方に押し出す。", true)
 					.addField("クラウドバースト（C）", "煙玉を投げる。この玉は着弾すると煙を発生させ、しばらくの間視線を遮る。アビリティーキーを「長押し」でこの煙玉をクロスヘアの方向にカーブさせる。", true)
-					.addField("　", "　", false)
-					.addField("アルティメット", "　", false)
+					.addField("アルティメット", "1", false)
 					.addField("ブレードストーム（X）", "ナイフを構える。このナイフは正確に狙いをつけることができ、相手をキルすると補充される。「発射」でターゲットに向かってナイフを1本づつ投げる。「オルト発射」で現在残っているすべてのナイフを投げる。", false)
 					.setTimestamp();
 				message.channel.send(`${message.author},`, embed0);
