@@ -186,7 +186,7 @@ client.on('voiceStateUpdate', (oldState, newState) => {
 	console.log(newUserChannel);
 	console.log(oldUserChannel);
 	console.log(switchprivate);
-	if (newState.channelID = switchprivate || oldUserChannel = switchprivate) {} else {
+
 		if (!oldUserChannel) { //vc参加時
 			client.channels.cache.get('754891923159777371').send("　Δ　" + newState.member
 				.user.username + "　Δ　　が通話に参加しました。")
@@ -194,7 +194,7 @@ client.on('voiceStateUpdate', (oldState, newState) => {
 			client.channels.cache.get('754891923159777371').send("　Δ　" + newState.member
 				.user.username + "　Δ　　が通話を退出しました。")
 		}
-	}
+
 })
 
 client.on('ready', () => {
