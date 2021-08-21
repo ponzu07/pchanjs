@@ -182,12 +182,15 @@ client.on('message', message => {
 client.on('voiceStateUpdate', (oldState, newState) => {
 	const newUserChannel = newState.channelID
 	const oldUserChannel = oldState.channelID
-	if (!oldUserChannel) { //vc参加時
-		client.channels.cache.get('754891923159777371').send("　Δ　" + newState.member
-			.user.username + "　Δ　　が通話に参加しました。")
-	} else if (!newUserChannel) { //vc退出時
-		client.channels.cache.get('754891923159777371').send("　Δ　" + newState.member
-			.user.username + "　Δ　　が通話を退出しました。")
+	const switchprivate = 865579375906521088
+	if (newState.channelID = switchprivate || oldUserChannel = switchprivate) {} else {
+		if (!oldUserChannel) { //vc参加時
+			client.channels.cache.get('754891923159777371').send("　Δ　" + newState.member
+				.user.username + "　Δ　　が通話に参加しました。")
+		} else if (!newUserChannel) { //vc退出時
+			client.channels.cache.get('754891923159777371').send("　Δ　" + newState.member
+				.user.username + "　Δ　　が通話を退出しました。")
+		}
 	}
 })
 
