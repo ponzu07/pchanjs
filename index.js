@@ -183,6 +183,9 @@ client.on('voiceStateUpdate', (oldState, newState) => {
 	const newUserChannel = newState.channelID
 	const oldUserChannel = oldState.channelID
 	const switchprivate = 865579375906521088
+	console.log(newUserChannel);
+	console.log(oldUserChannel);
+	console.log(switchprivate);
 	if (newState.channelID = switchprivate || oldUserChannel = switchprivate) {} else {
 		if (!oldUserChannel) { //vc参加時
 			client.channels.cache.get('754891923159777371').send("　Δ　" + newState.member
